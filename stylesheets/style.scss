@@ -1,0 +1,28 @@
+@import "bourbon/bourbon";
+
+$peagreen : #bada55;
+$darkcyan : #008B8B;
+$cyan : #00FFFF;
+$logoblue : #1a8c99;
+
+header {
+  @include linear-gradient($logoblue, $cyan);
+}
+
+.logo img {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+button {
+  @include button;
+}
