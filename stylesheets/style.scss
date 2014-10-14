@@ -5,8 +5,10 @@ $darkcyan : #008B8B;
 $cyan : #00FFFF;
 $logoblue : #1a8c99;
 
-header {
+
+.heading_wrapper {
   @include linear-gradient($logoblue, $cyan);
+  background-image: url(gplay.png) top-left repeat;
 }
 
 .logo img {

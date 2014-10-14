@@ -1,7 +1,8 @@
-header {
+.heading_wrapper {
   background-color: #1a8c99;
   background-image: -webkit-linear-gradient(#1a8c99, cyan);
   background-image: linear-gradient(#1a8c99, cyan);
+  background-image: url(gplay.png) top-left repeat;
 }
 
 button {
