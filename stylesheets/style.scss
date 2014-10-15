@@ -4,28 +4,67 @@ $peagreen : #bada55;
 $darkcyan : #008B8B;
 $cyan : #56c7d1;
 $logoblue : #1a8c99;
-$accenttaupe : #bacdae;
+$accenttaupe : #969086;
 
 body {
   @include background-image (url("images/diamonds-light.png"), linear-gradient($cyan, $logoblue, $darkcyan));
   background-repeat: repeat;
 }
 
-nav ul{
+nav ul {
   width: 100%;
 
   li {
     list-style: none;
+    margin: 0;
+    display: inline-block;
+
+    a {
+      padding:10px;
+      color: $accenttaupe;
+    }
   }
 }
 
-.heading_wrapper {
-  
+.logo-wrap {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.logo {
+  @include animation(tada 3s linear);
+}
+
+@include keyframes(tada) {
+  0%, 60%, 75%, 90%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    transform: none;
+  }
 }
 
 
 
-.logo img {
 
-}
 
