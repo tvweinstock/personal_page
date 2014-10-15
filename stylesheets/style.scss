@@ -2,29 +2,30 @@
 
 $peagreen : #bada55;
 $darkcyan : #008B8B;
-$cyan : #00FFFF;
+$cyan : #56c7d1;
 $logoblue : #1a8c99;
+$accenttaupe : #bacdae;
 
+body {
+  @include background-image (url("images/diamonds-light.png"), linear-gradient($cyan, $logoblue, $darkcyan));
+  background-repeat: repeat;
+}
+
+nav ul{
+  width: 100%;
+
+  li {
+    list-style: none;
+  }
+}
 
 .heading_wrapper {
-  @include linear-gradient($logoblue, $cyan);
-  background-image: url(gplay.png) top-left repeat;
+  
 }
+
+
 
 .logo img {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-button {
-  @include button;
-}
