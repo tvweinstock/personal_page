@@ -18,49 +18,24 @@ span.top {
   background: #1a8c99;
 }
 
-nav {
+.nav-wrapper {
   width: 100%;
-  position: relative;
+  position: absolute;
+  z-index: 900;
+  top: 0;
+  padding: 3%;
 }
-nav ul {
-  text-align: center;
-  padding-top: 40px;
-}
-nav ul li {
-  list-style: none;
-  width: 10%;
-  display: inline;
-  font-size: 3rem;
-}
-nav ul li a {
-  padding: 10px;
-  color: #706d68;
-  text-decoration: none;
-}
-nav .language a {
-  text-decoration: none;
-  color: #706d68;
-  position: relative;
-  bottom: 30px;
-  left: 20px;
-  font-size: 1.5rem;
-}
-
-.menu_item2 {
-  margin-left: 50px;
-  margin-right: 100px;
-}
-
-.menu_item3 {
-  margin-left: 100px;
-  margin-right: 50px;
+.nav-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .logo-wrap {
-  width: 100%;
-  text-align: center;
+  margin-left: 10%;
+  padding-top: 2%;
   position: relative;
-  bottom: 30px;
+  width: 10%;
 }
 
 .logo {
@@ -100,5 +75,94 @@ nav .language a {
   100% {
     opacity: 1;
     transform: none;
+  }
+}
+nav {
+  width: 45%;
+  margin-left: 40%;
+  float: left;
+}
+nav ul {
+  margin: 0;
+  padding: 1%;
+  position: relative;
+}
+nav ul li {
+  list-style: none;
+  font-size: 2.3rem;
+  display: inline;
+  padding: 2% 3%;
+}
+nav ul li a {
+  color: #706d68;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  border-bottom: 1px solid #706d68;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  transition: 0.3s all;
+}
+nav .language {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
+nav .language a {
+  text-decoration: none;
+  color: #706d68;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+nav .language a:hover {
+  border-bottom: 1px solid #706d68;
+}
+
+.img-container {
+  width: 100%;
+  position: relative;
+}
+.img-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.img-container img {
+  position: absolute;
+  left: 198px;
+  top: 98px;
+  height: 285px;
+  width: 285px;
+  border-radius: 50%;
+}
+
+svg {
+  position: absolute;
+  left: 190px;
+  top: 90px;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 5s linear forwards;
+  -moz-animation: dash 5s linear forwards;
+  animation: dash 5s linear forwards;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
   }
 }

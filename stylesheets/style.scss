@@ -6,7 +6,6 @@ $cyan : #56c7d1;
 $logoblue : #1a8c99;
 $accenttaupe : #969086;
 $darkbrown : #706d68;
-$transparenttaupe : rgba(150, 144, 134, 0.46);
 
 html {
   font-size: 62.5%;
@@ -28,49 +27,20 @@ span.top {
 
 }
 
-nav {
+.nav-wrapper {
   width: 100%;
-  position: relative;
-
-  ul {
-    text-align: center;
-    padding-top: 40px;
-    li {
-      list-style: none;
-      width: 10%;
-      display: inline;
-      font-size: 3rem;
-      a {
-        padding: 10px;
-        color: $darkbrown;
-        text-decoration: none;
-      }
-    }
-  }
-  .language a {
-    text-decoration: none;
-    color: $darkbrown;
-    position: relative;
-    bottom: 30px;
-    left: 20px;
-    font-size: 1.5rem;
-  }
-}
-.menu_item2 {
-  margin-left: 50px;
-  margin-right: 100px;
-}
-
-.menu_item3 {
-  margin-left: 100px;
-  margin-right: 50px;
+  @include clearfix;
+  position: absolute;
+  z-index: 900;
+  top: 0;
+  padding: 3%;
 }
 
 .logo-wrap {
-  width: 100%;
-  text-align: center;
+  margin-left: 10%;
+  padding-top: 2%;
   position: relative;
-  bottom: 30px;
+  width: 10%;
 }
 
 .logo {
@@ -89,8 +59,82 @@ nav {
   }
 }
 
+nav {
+  width: 45%;
+  margin-left: 40%;
+  float: left; 
+  ul {
+    margin: 0;
+    padding: 1%;
+    position: relative;
 
+    li {
+      list-style: none;
+      font-size: 2.3rem;
+      display: inline;
+      padding: 2% 3%;
+      a {
+        color: $darkbrown;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+          border-bottom: 1px solid $darkbrown;
+          @include transition (0.3s all);
+        }
+      }
+    }
+  }
+  .language {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    a {
+      text-decoration: none;
+      color: $darkbrown;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      &:hover {
+        border-bottom: 1px solid $darkbrown;
+      }
+    }
+  }
+}
 
+header {
+
+}
+
+.img-container {
+  width: 100%;
+  position: relative;
+  @include clearfix;
+  img {
+    position: absolute;
+    left: 198px;
+    top: 98px;
+    height: 285px;
+    width: 285px;
+    border-radius: 50%;
+  }
+}
+
+svg {
+  position: absolute;
+  left: 190px;
+  top: 90px;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  @include animation(dash 5s linear forwards);
+}
+
+@include keyframes(dash) {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
 
 
