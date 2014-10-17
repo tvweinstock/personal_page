@@ -90,26 +90,26 @@ nav {
         text-transform: uppercase;
         &:hover {
           border-bottom: 1px solid $darkbrown;
-          
         }
       }
     }
   }
-
 }
 
-header {
-  padding-top: 200px;
+.about {
+  width: 100%;
 }
 
 .img-container {
-  width: 100%;
+  width: 50%;
   position: relative;
-  @include clearfix;
-  img {
-    position: absolute;
-    left: 198px;
-    top: 98px;
+  float: left;
+  
+  img.tobz {
+    position: relative;
+    float: left;
+    left: 197px;
+    top: 7px;
     height: 285px;
     width: 285px;
     border-radius: 50%;
@@ -119,7 +119,7 @@ header {
 svg#circle {
   position: absolute;
   left: 190px;
-  top: 90px;
+  top: 0;
 }
 
 .path {
@@ -132,4 +132,8 @@ svg#circle {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.speil {
+
 }

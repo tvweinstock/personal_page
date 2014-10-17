@@ -322,27 +322,23 @@ nav ul li a:hover {
   border-bottom: 1px solid #706d68;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tobiweinstock\/Documents\/code\/personal_page\/stylesheets\/style\.scss}line{font-family:\00003101}}
-header {
-  padding-top: 200px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tobiweinstock\/Documents\/code\/personal_page\/stylesheets\/style\.scss}line{font-family:\0000399}}
+.about {
+  width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tobiweinstock\/Documents\/code\/personal_page\/stylesheets\/style\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tobiweinstock\/Documents\/code\/personal_page\/stylesheets\/style\.scss}line{font-family:\00003103}}
 .img-container {
-  width: 100%;
+  width: 50%;
   position: relative;
+  float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tobiweinstock\/Documents\/code\/personal_page\/stylesheets\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000315}}
-.img-container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tobiweinstock\/Documents\/code\/personal_page\/stylesheets\/style\.scss}line{font-family:\00003109}}
-.img-container img {
-  position: absolute;
-  left: 198px;
-  top: 98px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tobiweinstock\/Documents\/code\/personal_page\/stylesheets\/style\.scss}line{font-family:\00003108}}
+.img-container img.tobz {
+  position: relative;
+  float: left;
+  left: 197px;
+  top: 7px;
   height: 285px;
   width: 285px;
   border-radius: 50%;
@@ -352,7 +348,7 @@ header {
 svg#circle {
   position: absolute;
   left: 190px;
-  top: 90px;
+  top: 0;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tobiweinstock\/Documents\/code\/personal_page\/stylesheets\/style\.scss}line{font-family:\00003125}}
