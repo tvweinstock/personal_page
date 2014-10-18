@@ -193,6 +193,7 @@ body {
   background-image: url("images/diamonds-light.png"), linear-gradient(#56c7d1, #1a8c99, darkcyan);
   background-repeat: repeat;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
   color: #514d46;
 }
 
@@ -203,10 +204,6 @@ span.top {
   left: 0;
   height: 5px;
   background: #1a8c99;
-}
-
-h2 {
-  font-size: 2rem;
 }
 
 .nav-wrapper {
@@ -239,7 +236,6 @@ nav ul {
 nav ul li {
   list-style: none;
   font-size: 2.3rem;
-  font-weight: 300;
   display: inline;
   padding: 2% 3%;
 }
@@ -298,8 +294,7 @@ svg#circle {
 }
 .about .img-container {
   position: relative;
-  padding-top: 50px;
-  width: 40%;
+  width: 30%;
   float: left;
 }
 .about .img-container img.tobz {
@@ -312,8 +307,12 @@ svg#circle {
 }
 .about .about-intro {
   font-size: 4.2em;
-  font-weight: 300;
   margin-left: 14%;
+  font-weight: 300;
+}
+.about h2 {
+  font-size: 3em;
+  font-weight: 300;
 }
 .about .spiel {
   float: left;
@@ -332,4 +331,35 @@ svg#circle {
   text-decoration: none;
   border-bottom: 1px solid #1a8c99;
   color: #514d46;
+}
+
+ul.social {
+  width: 75%;
+}
+ul.social li {
+  list-style: none;
+  font-size: 5em;
+  display: inline;
+  padding: 0 1%;
+}
+ul.social li a {
+  color: #514d46;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+ul.social li a:hover {
+  color: #1a8c99;
+}
+
+.skill-set {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skill-set:after {
+  content: "";
+  display: table;
+  clear: both;
 }
