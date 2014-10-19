@@ -74,10 +74,10 @@ nav {
         color: $darkbrown;
         font-size: 2.5rem;
         text-transform: uppercase;
-        border-bottom: 1px solid transparent;
-        @include transition(all 0.5s ease-in);
+        border-bottom: 1px double transparent;
+        @include transition(all 0.3s ease-in);
         &:hover {
-          border-bottom: 1px solid $darkbrown;
+          border-bottom: 1px double $darkbrown;
           color: $logoblue;
         }
       }
@@ -119,23 +119,13 @@ svg#circle {
     }
   }
 
-  .about-intro {
-    font-size: 4.2em;
-    margin-left: 14%;
-    font-weight: 300;
-  }
-
-  h2 {
-    font-size: 3em;
-    font-weight: 300;
-  }
 
 
   .spiel {
     @include span-columns(7);
     p {
-      font-size: 1.8rem;
-      margin-left: 5%;
+      font-size: 2em;
+      margin-left: 15%;
       a {
         text-decoration: none;
         border-bottom: 1px solid $logoblue;
@@ -147,26 +137,46 @@ svg#circle {
 
 ul.social {
   width: 75%;
+  margin-left: 10%;
   li {
     list-style: none;
     font-size: 5em;
     display: inline;
     padding: 0 1%;
     a {
-    color: $darkbrown;
-    text-decoration: none;
-    @include transition(all 0.5s ease-in);
-    &:hover {
-      color: $logoblue;
+      color: $darkbrown;
+      text-decoration: none;
+      @include transition(all 0.3s ease-in);
+      &:hover {
+        color: $logoblue;
       }
     }
   }
 }
 
 .skill-set {
-  @include outer-container
-
+  @include span-columns(12);
+  background: white;
+  .skills {
+    @include span-columns(4);
+    padding: 3%;
+    .fa {
+      font-size: 6em;
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
 
+  h1 {
+    font-size: 4em;
+    font-weight: 300;
+    text-align: center;
+  }
 
 
+  h2 {
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+  }

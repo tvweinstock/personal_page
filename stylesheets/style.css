@@ -244,13 +244,13 @@ nav ul li a {
   color: #514d46;
   font-size: 2.5rem;
   text-transform: uppercase;
-  border-bottom: 1px solid transparent;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  border-bottom: 1px double transparent;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 nav ul li a:hover {
-  border-bottom: 1px solid #514d46;
+  border-bottom: 1px double #514d46;
   color: #1a8c99;
 }
 
@@ -305,15 +305,6 @@ svg#circle {
   width: 285px;
   border-radius: 50%;
 }
-.about .about-intro {
-  font-size: 4.2em;
-  margin-left: 14%;
-  font-weight: 300;
-}
-.about h2 {
-  font-size: 3em;
-  font-weight: 300;
-}
 .about .spiel {
   float: left;
   display: block;
@@ -324,8 +315,8 @@ svg#circle {
   margin-right: 0;
 }
 .about .spiel p {
-  font-size: 1.8rem;
-  margin-left: 5%;
+  font-size: 2em;
+  margin-left: 15%;
 }
 .about .spiel p a {
   text-decoration: none;
@@ -335,6 +326,7 @@ svg#circle {
 
 ul.social {
   width: 75%;
+  margin-left: 10%;
 }
 ul.social li {
   list-style: none;
@@ -345,21 +337,48 @@ ul.social li {
 ul.social li a {
   color: #514d46;
   text-decoration: none;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 ul.social li a:hover {
   color: #1a8c99;
 }
 
 .skill-set {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background: white;
 }
-.skill-set:after {
-  content: "";
-  display: table;
-  clear: both;
+.skill-set:last-child {
+  margin-right: 0;
+}
+.skill-set .skills {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  padding: 3%;
+}
+.skill-set .skills:last-child {
+  margin-right: 0;
+}
+.skill-set .skills .fa {
+  font-size: 6em;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
 }
