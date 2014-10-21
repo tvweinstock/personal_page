@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Tobi Weinstock // Full Stack Web Developer in Paris, France </title>
+  <link rel="SHORTCUT ICON" href="favicon.ico">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
@@ -43,33 +44,34 @@
     </div>
     <h2>....currently coding & croissant tasting in Paris.</h2>
     <div class="spiel">
-      <p>Hi, I'm Tobi, a Canadian web developer based in Paris. I code in JavaScript, CSS3, HTML5, Ruby, and I am a self-proclaimed responsive design spokeswoman. <br>
-        In my previous career I worked as a television & film scheduler for a major telecommunications company. I became a walking, talking IMDb after this stint!
-        <a href="contact">Drop me a line</a> if you'd like to talk about all things web, entertainment, or poutine!
-      </p>
+      <p>Hi, I'm Tobi, a Canadian web developer based in Paris. I code in JavaScript, Ruby, CSS3, HTML5, and I am a self-proclaimed responsive design spokeswoman.<br>
+        In my previous career I worked as a television & film scheduler for a major telecommunications company which made me into a walking, talking IMDb!
+        <a href="#contact">Drop me a line</a> if you'd like to talk about all things web, entertainment, or poutine!
+        
 
-      <ul class="social">
-        <li>
-          <a href="http://twitter.com/TobiTrice" target="_blank" title="twitter" >
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="http://instagram.com/toblerone999" target="_blank" title="instagram" >
-            <i class="fa fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/tvweinstock" target="_blank" title="github" >
-            <i class="fa fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/tobiweinstock/" target="_blank" title="linkedin" >
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
+        <ul class="social">
+          <li>
+            <a href="http://twitter.com/TobiTrice" target="_blank" title="twitter" >
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://instagram.com/toblerone999" target="_blank" title="instagram" >
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/tvweinstock" target="_blank" title="github" >
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/tobiweinstock/" target="_blank" title="linkedin" >
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </p>
     </div>
   </section>
 
@@ -79,7 +81,7 @@
     <div class="skills">
       <div class="skill-image-container">
         <i class="fa fa-code"></i>
-        <h2>Dev</h2>
+        <h2 class="skill-heads">Dev</h2>
       </div>
       <div class="skill-description">
         <p>JavaScript, jQuery, CSS3 & HTML5 AJAX, APIs & JSON</p>
@@ -88,7 +90,7 @@
     <div class="skills">
       <div class="skill-image-container">
         <i class="fa fa-wrench"></i>
-        <h2>Tools</h2>
+        <h2 class="skill-heads">Tools</h2>
       </div>
       <div class="skill-description">
         <p>Git, AJAX, Responsive Design, Command Line, SASS, Bourbon.</p>
@@ -97,7 +99,7 @@
     <div class="skills">
       <div class="skill-image-container">
         <i class="fa fa-thumbs-o-up"></i>
-        <h2>Methods</h2>
+        <h2 class="skill-heads">Methods</h2>
       </div>
       <div class="skill-description">
         <p>Responsive Design, MVC, Pair Programming.</p>
@@ -105,36 +107,43 @@
     </div>
   </section>
 
-  <section class="projects">
-    <div class="project">
+  <section class="projects clearfix">
     <h1>Projects</h1>
+    <div class="project-wrapper">
       <h2>Mi Creative Home Staging</h2>
-      <a href="">
-        <img src="" alt="MI Creative Home Staging" title="MI">
+      <a href="http://micreativehomestaging.com/">
+        <div class="video-wrapper">
+          <video loop>
+            <source src="videos/proj-vid1-sm.mp4" type="video/mp4" loop="true" />
+          </video>
+        </div>
+        <p>
+          Company Website for Toronto Home Stager Grace Choi. 
+        </p>
+      </a> 
+      <span class="tech">HTML5, CSS3, jQuery, Responsive Design, Copywrite</span>
+    </div>
+    <div class="project-wrapper">
+      <h2>BAPT (Bad Ass Public Transit)</h2>
+      <a href="https://github.com/tvweinstock/bapt">
+        <div class="video-wrapper">
+          <video loop>
+            <source src="videos/bapt-vid.mp4" type="video/mp4" loop="true" />
+          </video>
+        </div>
       </a>
       <p>
-        Company Website for Toronto Home Stager Grace Choi. Design, Code, Copywrite. 
-        <span class="tech">HTML5, CSS3, jQuery, Responsive Design</span>
+        Chrome Extension Built for public transit riders in Toronto, Canada. <br>
+        <a href="https://github.com/tvweinstock/bapt" class="demo">Source Code</a>
       </p>
+      <span class="tech">JavaScript, API, AJAX, HTML5, CSS3</span>
     </div>
-    <div class="project">
-      <h2>BAPT</h2>
-      <a href="">
-        <img src="" alt="">
-      </a>
-      <p>
-        Chrome Extension Built for public transit riders in Toronto, Canada. 
-        <span class="tech">JavaScript, API, AJAX, HTML5, CSS3</span>
-      </p>
-    </div>
-
-
   </section> 
 
   <footer id="contact">
-    <h2>Get in Touch</h2>
+    <h1>Get in Touch</h1>
     <div class="contacts">
-      <ul class="icons">
+      <ul class="social">
         <li>
           <a href="http://twitter.com/TobiTrice" target="_blank" title="twitter" >
             <i class="fa fa-twitter"></i>
@@ -169,5 +178,7 @@
 
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
