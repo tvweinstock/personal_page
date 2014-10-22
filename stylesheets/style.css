@@ -203,7 +203,16 @@ span.top {
   top: 0;
   left: 0;
   height: 5px;
+  z-index: 1000;
   background: #1a8c99;
+}
+
+span.greenline {
+  position: relative;
+  bottom: 30px;
+  display: block;
+  border-top: 2px dotted #c3cf1b;
+  margin: 0 45%;
 }
 
 .nav-wrapper {
@@ -249,7 +258,7 @@ nav ul li a {
   transition: all 0.3s ease-in;
 }
 nav ul li a:hover {
-  border-bottom: 1px double #514d46;
+  border-bottom: 1px double #c3cf1b;
   color: #1a8c99;
 }
 
@@ -427,27 +436,27 @@ ul.social li a:hover {
   height: 300px;
 }
 
-.contact-container {
+footer {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   background: url("images/extra_clean_paper.png") repeat top left;
 }
-.contact-container:last-child {
+footer:last-child {
   margin-right: 0;
 }
-.contact-container .contacts {
+footer .contacts {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
   text-align: center;
 }
-.contact-container .contacts:last-child {
+footer .contacts:last-child {
   margin-right: 0;
 }
-.contact-container .contacts p {
+footer .contacts p {
   position: relative;
   bottom: 15px;
   font-size: 2.8em;

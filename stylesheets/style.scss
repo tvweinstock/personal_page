@@ -8,13 +8,14 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-$peagreen : #bada55;
+$logogreen : #c3cf1b;
 $darkcyan : #008B8B;
 $cyan : #56c7d1;
 $logoblue : #1a8c99;
+$lightlogo : #99cacf;
 $accenttaupe : #969086;
 $darkbrown : #514D46;
-$lightlogo : #99cacf;
+
 
 html {
   font-size: 62.5%;
@@ -35,7 +36,16 @@ span.top {
   top: 0;
   left: 0;
   height: 5px;
+  z-index: 1000;
   background: $logoblue
+}
+
+span.greenline {
+  position: relative;
+  bottom: 30px;
+  display: block;
+  border-top: 2px dotted $logogreen;
+  margin: 0 45%; 
 }
 
 
@@ -76,7 +86,7 @@ nav {
         border-bottom: 1px double transparent;
         @include transition(all 0.3s ease-in);
         &:hover {
-          border-bottom: 1px double $darkbrown;
+          border-bottom: 1px double $logogreen;
           color: $logoblue;
         }
       }
@@ -210,7 +220,7 @@ ul.social {
   }
 }
 
-.contact-container {
+footer {
   @include span-columns(12);
   background: url('images/extra_clean_paper.png') repeat top left;
   .contacts {
