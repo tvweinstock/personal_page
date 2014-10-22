@@ -7,3 +7,10 @@ $(document).ready(function (){
     el.currentTime = 0;
   });
 });
+
+// smooth scroll
+$(function(){
+  $('nav a').smoothScroll({
+    offset : -48
+  });
+});
