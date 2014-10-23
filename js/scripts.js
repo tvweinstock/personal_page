@@ -23,9 +23,8 @@ $(document).ready(function (){
     if(scrollPoint > fixedNavSpot) {
       $('.nav-wrapper').css({
                             'position' : 'fixed',
-                            'font-size' : '1.5em',
                             'background' : 'rgba(255, 255, 255, 0.75)'
-                                                });
+                            });
     }
     else {
       $('.nav-wrapper').css({'position' : 'relative'});
