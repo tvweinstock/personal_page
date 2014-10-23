@@ -235,15 +235,18 @@ span.greenline {
 }
 
 nav {
+  position: relative;
   margin-top: -25px;
 }
 nav ul {
+  position: relative;
+  bottom: 5px;
   width: 75%;
   margin: 0 auto;
 }
 nav ul li {
   list-style: none;
-  font-size: 2.3rem;
+  font-size: 2.3em;
   display: inline;
   padding: 2% 3%;
 }
@@ -260,6 +263,10 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom: 1px double #c3cf1b;
   color: #1a8c99;
+}
+
+nav.fixed {
+  position: fixed;
 }
 
 svg#circle {

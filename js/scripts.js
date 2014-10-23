@@ -6,11 +6,29 @@ $(document).ready(function (){
     el.pause();
     el.currentTime = 0;
   });
-});
 
 // smooth scroll
-$(function(){
-  $('nav a').smoothScroll({
-    offset : -48
+  $(function(){
+    $('nav a').smoothScroll({
+      offset : -48
+    });
+  });
+
+  $(window).on('scroll',function() {
+    var fixedNavSpot = $('.skill-set');
+    if(fixedNavSpot.length) {
+      fixedNavSpot = fixedNavSpot.position().top;
+    }
+    var scrollPoint = $(window).scrollTop();
+    if(scrollPoint > fixedNavSpot) {
+      $('.nav-wrapper').css({
+                            'position' : 'fixed',
+                            'font-size' : '1.5em',
+                            'background' : 'rgba(255, 255, 255, 0.75)'
+                                                });
+    }
+    else {
+      $('.nav-wrapper').css({'position' : 'relative'});
+    }
   });
 });
