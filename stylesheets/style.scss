@@ -88,7 +88,7 @@ nav {
         border-bottom: 1px double transparent;
         @include transition(all 0.3s ease-in);
         &:hover {
-          border-bottom: 1px double $logogreen;
+          border-bottom: 1px solid $logogreen;
           color: $logoblue;
         }
       }
@@ -98,6 +98,7 @@ nav {
 
 .active {
   color: $logoblue;
+  border-bottom: 1px solid $logogreen;
 }
 
 .fixed {
@@ -219,6 +220,7 @@ ul.social {
       width: 70%;
       text-align: center;
       font-size: 1.8em;
+      font-weight: 500;
     }
   }
 }
@@ -237,6 +239,7 @@ footer {
   .contacts {
     @include span-columns(4);
     text-align: center;
+    position: relative;
     p {
       position: relative;
       bottom: 15px;
@@ -268,6 +271,21 @@ footer {
   clear: both;
   margin-top: 20px;
 }
+
+
+h1 {
+  font-size: 4.8em;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+h2 {
+  font-size: 4em;
+  font-weight: 300;
+  text-align: center;
+}
+
 
 // responsive Media 
 @media (max-width: 1310px) {
@@ -311,11 +329,22 @@ footer {
     font-size: 52.5%;
   }
   .about .spiel p {
-    margin-left: 10%;
+    margin-left: 15%;
   }
   .about .img-container {
     width: 40%;
-    margin-left: -15%;
+    margin-left: -10%;
+  }
+  .social1 {
+    width: 90%;
+    margin-left: 10%;
+  }
+  .projects .project-wrapper p {
+    width: 100%;
+    font-size: 2.5em;
+  }
+  .mail {
+    top: 10px;
   }
   .fa-send {
     right: 120px;
@@ -329,36 +358,153 @@ footer {
   svg.logo {
     height: 43px;
     width: 59px;
+    top: 10px;
+  }
+  .language {
+    top: 15px;
+    right: 100px;
+  }
+
+  .about .spiel p {
+    margin-left: 20%;
+  }
+  .social1 {
+    margin-left: 15%;
+  }
+  .about .img-container {
+    width: 40%;    
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-h1 {
-  font-size: 4.8em;
-  font-weight: 300;
-  text-align: center;
+@media (max-width: 850px) {
+  .about .spiel p {
+    margin-left: 25%;
+  }
 }
 
+@media (max-width: 815px) {
+  nav ul {
+    bottom: 0;
+    width: 80%;
+    padding-bottom: 1%;
+  }
 
-h2 {
-  font-size: 3em;
-  font-weight: 300;
-  text-align: center;
+  .language {
+    right: 60px;
+  }
+  .about .img-container {
+    float: none;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .about .spiel {
+    width: 100%;
+    margin-top: -8%;
+    font-size: 1.3em;
+    p {
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+  .social1{
+    margin: 0;
+    text-align: center;
+  }
+
+  .projects .project-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  nav ul {
+    width: 90%;
+  }
+
+  .language {
+    right: 20px;
+  }
+  h1.about-intro {
+    font-size: 4.2em;
+  }
+  .about h2 {
+    font-size: 3.5em;
+  }
+  .about .img-container {
+    width: 80%;
+  }
+  footer .contacts {
+    float: none;
+    margin: 0 auto;
+    width: 60%;
+    padding: 5px;
+  }
+  footer .contacts:last-child {
+    margin-right: 20%;
+    bottom: 20px;
+  }
+  .fa-send {
+    top: -11px;
+    right: 185px;
+  }
+}
+@media (max-width: 650px) {
+  .language {
+    right: 1px;
+    top: 8px;
+  }
+  nav ul {
+    bottom: 0;
+    padding: 3% 0;
+    li {
+      padding: 2%;
+    }
+  }
+  svg.logo {
+    top: 20px;
+  }
+  .fa-send {
+    right: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  nav ul {
+    width: 100%;
+  }
+
+  h1.about-intro {
+    font-size: 3.5em;
+  }
+  .about h2 {
+    font-size: 3em;
+  }
+  .about .img-container {
+    width: 100%;
+  }
+
+  .video-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .fa-send {
+    right: 126px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  footer .contacts {
+    width: 90%;
+  }
+
 }
