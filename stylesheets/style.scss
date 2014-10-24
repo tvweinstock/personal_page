@@ -48,7 +48,6 @@ span.greenline {
   margin: 0 45%; 
 }
 
-
 .nav-wrapper {
   width: 100%;
   top: 0;
@@ -97,8 +96,13 @@ nav {
   }
 }
 
-nav.fixed {
+.active {
+  color: $logoblue;
+}
+
+.fixed {
   position: fixed;
+  background: rgba(255, 255, 255, 0.75);
 }
 
 svg#circle {
@@ -139,7 +143,7 @@ svg#circle {
     @include span-columns(7);
     p {
       font-size: 2em;
-      margin-left: 10%;
+      margin-left: 5%;
       width: 95%;
       line-height: 1.5em;
       a {
@@ -268,7 +272,7 @@ footer {
 // responsive Media 
 @media (max-width: 1310px) {
   .about .spiel p {
-    margin-left: 15%;
+    margin-left: 10%;
   }
   nav ul {
     width: 60%;
@@ -276,6 +280,9 @@ footer {
 }
 
 @media (max-width: 1245px) {
+  .about .spiel p {
+    margin-left: 15%;
+  }
   .projects {
     text-align: center;
     .project-wrapper {
@@ -291,7 +298,11 @@ footer {
   }
   nav ul {
     width: 70%;
-    bottom: 0;
+    bottom: 5px;
+  }
+  svg.logo {
+    position: relative;
+    top: 10px;
   }
 }
 
@@ -299,20 +310,12 @@ footer {
   html {
     font-size: 52.5%;
   }
-  nav ul {
-    width: 70%;
-    bottom: 5px;
-  }
-  svg.logo {
-    position: relative;
-    top: 5px;
-  }
   .about .spiel p {
     margin-left: 10%;
   }
   .about .img-container {
     width: 40%;
-    margin-left: -10%;
+    margin-left: -15%;
   }
   .fa-send {
     right: 120px;

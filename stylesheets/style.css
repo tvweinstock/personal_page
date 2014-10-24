@@ -265,8 +265,13 @@ nav ul li a:hover {
   color: #1a8c99;
 }
 
-nav.fixed {
+.active {
+  color: #1a8c99;
+}
+
+.fixed {
   position: fixed;
+  background: rgba(255, 255, 255, 0.75);
 }
 
 svg#circle {
@@ -331,7 +336,7 @@ svg#circle {
 }
 .about .spiel p {
   font-size: 2em;
-  margin-left: 10%;
+  margin-left: 5%;
   width: 95%;
   line-height: 1.5em;
 }
@@ -495,7 +500,7 @@ footer .contacts p {
 
 @media (max-width: 1310px) {
   .about .spiel p {
-    margin-left: 15%;
+    margin-left: 10%;
   }
 
   nav ul {
@@ -503,6 +508,10 @@ footer .contacts p {
   }
 }
 @media (max-width: 1245px) {
+  .about .spiel p {
+    margin-left: 15%;
+  }
+
   .projects {
     text-align: center;
   }
@@ -518,22 +527,17 @@ footer .contacts p {
 
   nav ul {
     width: 70%;
-    bottom: 0;
-  }
-}
-@media (max-width: 1050px) {
-  html {
-    font-size: 52.5%;
-  }
-
-  nav ul {
-    width: 70%;
     bottom: 5px;
   }
 
   svg.logo {
     position: relative;
-    top: 5px;
+    top: 10px;
+  }
+}
+@media (max-width: 1050px) {
+  html {
+    font-size: 52.5%;
   }
 
   .about .spiel p {
@@ -542,7 +546,7 @@ footer .contacts p {
 
   .about .img-container {
     width: 40%;
-    margin-left: -10%;
+    margin-left: -15%;
   }
 
   .fa-send {

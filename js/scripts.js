@@ -7,12 +7,22 @@ $(document).ready(function (){
     el.currentTime = 0;
   });
 
-// smooth scroll
-  $(function(){
-    $('nav a').smoothScroll({
-      offset : -48
-    });
+// Chris Croyier's fantastic smooth scroll
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
   });
+});
+
 
   $(window).on('scroll',function() {
     var fixedNavSpot = $('.skill-set');
@@ -21,13 +31,22 @@ $(document).ready(function (){
     }
     var scrollPoint = $(window).scrollTop();
     if(scrollPoint > fixedNavSpot) {
-      $('.nav-wrapper').css({
-                            'position' : 'fixed',
-                            'background' : 'rgba(255, 255, 255, 0.75)'
-                            });
+      $('.nav-wrapper').addClass('fixed').fadeIn('slow');
     }
     else {
-      $('.nav-wrapper').css({'position' : 'relative'});
+      $('.nav-wrapper').removeClass('fixed').fadeIn('fast');
     }
   });
+
+$("nav ul a").click(function() {
+  $("nav ul a").removeClass("active");
+  $(this).addClass('active');
 });
+
+
+
+
+
+
+
+});  // closing document.ready
