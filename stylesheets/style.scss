@@ -83,7 +83,6 @@ nav {
       a {
         text-decoration: none;
         color: $darkbrown;
-        font-size: 2.5rem;
         text-transform: uppercase;
         border-bottom: 1px double transparent;
         @include transition(all 0.3s ease-in);
@@ -218,7 +217,6 @@ ul.social {
     p {
       margin: 15px auto;
       width: 70%;
-      text-align: center;
       font-size: 1.8em;
       font-weight: 500;
     }
@@ -335,10 +333,6 @@ h2 {
     width: 40%;
     margin-left: -10%;
   }
-  .social1 {
-    width: 90%;
-    margin-left: 10%;
-  }
   .projects .project-wrapper p {
     width: 100%;
     font-size: 2.5em;
@@ -352,9 +346,6 @@ h2 {
 }
 
 @media (max-width: 925px) {
-  html {
-    font-size: 47.5%;
-  }
   svg.logo {
     height: 43px;
     width: 59px;
@@ -364,12 +355,8 @@ h2 {
     top: 15px;
     right: 100px;
   }
-
   .about .spiel p {
     margin-left: 20%;
-  }
-  .social1 {
-    margin-left: 15%;
   }
   .about .img-container {
     width: 40%;    
@@ -377,8 +364,24 @@ h2 {
 }
 
 @media (max-width: 850px) {
+  h1.about-intro {
+    font-size: 4em;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .about h2 {
+    font-size: 3.4em;
+    text-align: left;
+    padding-left: 40px;
+  }
   .about .spiel p {
     margin-left: 25%;
+  }
+  nav ul li {
+    font-size: 2em;
+  }
+  footer .contacts p, .mail {
+    font-size: 2.3em;
   }
 }
 
@@ -388,7 +391,6 @@ h2 {
     width: 80%;
     padding-bottom: 1%;
   }
-
   .language {
     right: 60px;
   }
@@ -400,19 +402,13 @@ h2 {
   .about .spiel {
     width: 100%;
     margin-top: -8%;
-    font-size: 1.3em;
     p {
-      text-align: center;
       width: 100%;
       margin: 0;
       padding: 10px;
+      font-size: 1.9em;
     }
   }
-  .social1{
-    margin: 0;
-    text-align: center;
-  }
-
   .projects .project-wrapper {
     width: 100%;
     margin: 0;
@@ -426,12 +422,6 @@ h2 {
 
   .language {
     right: 20px;
-  }
-  h1.about-intro {
-    font-size: 4.2em;
-  }
-  .about h2 {
-    font-size: 3.5em;
   }
   .about .img-container {
     width: 80%;
@@ -466,6 +456,23 @@ h2 {
   svg.logo {
     top: 20px;
   }
+  h1.about-intro {
+    font-size: 3.8em;
+  }
+  .about h2 {
+    font-size: 3.2em;
+  }
+  svg#circle {
+    left: 90px;
+  }
+  .about .img-container img.tobz {
+    left: 98px;
+  }
+
+  .skill-set {
+    padding: 0;
+  }
+
   .fa-send {
     right: 140px;
   }
@@ -475,21 +482,29 @@ h2 {
 
   nav ul {
     width: 100%;
+    padding: 5% 0;
   }
 
   h1.about-intro {
-    font-size: 3.5em;
+    font-size: 3.2em;
   }
   .about h2 {
-    font-size: 3em;
+    font-size: 2.6em;
   }
   .about .img-container {
     width: 100%;
   }
 
+  .projects .project-wrapper p {
+    font-size: 2em;
+  }
+
   .video-wrapper {
     width: 90%;
     margin: 0 auto;
+    video {
+      height: 265px;
+    }
   }
 
   .fa-send {
@@ -498,13 +513,54 @@ h2 {
 }
 
 @media (max-width: 500px) {
+  footer .contacts {
+    width: 90%;
+  }
+  .fa-send{
+    font-size: 9em;
+  }
+}
 
-  nav ul li a {
-    font-size: 1em;
+@media (max-width: 440px) {
+
+  nav ul li {
+    font-size: 1.6em;
+    padding: 2%;
+  }
+  .about h2 {
+    font-size: 2.5em;
+  }
+
+  svg#circle {
+    left: 30px;
+  }
+
+  .about .img-container img.tobz {
+    left: 37px;
+  }
+
+  .skill-set .skills h2 {
+    font-size: 3em;
+  }
+
+  .skill-description p {
+    font-size: 2em;
+  }
+  .video-wrapper video {
+    height: 190px;
   }
 
   footer .contacts {
     width: 90%;
   }
+  h2 {
+    font-size: 3em;
+  }
+}
 
+@media (max-width: 440px) {
+
+  .skill-set .skills .fa {
+    font-size: 6em;
+  }
 }
