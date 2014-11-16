@@ -16,6 +16,10 @@ $lightlogo : #99cacf;
 $accenttaupe : #969086;
 $darkbrown : #514D46;
 
+::selection { 
+  background: $lightlogo;
+}
+
 
 html {
   font-size: 62.5%;
@@ -56,6 +60,7 @@ span.greenline {
 }
 
 .language {
+  display: none;
   position: absolute;
   top: 30px;
   right: 150px;
@@ -110,7 +115,6 @@ svg#circle {
   left: 130px;
   top: -7px;
 }
-
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -142,7 +146,7 @@ svg#circle {
   .spiel {
     @include span-columns(7);
     p {
-      font-size: 2em;
+      font-size: 2.5em;
       margin-left: 5%;
       width: 95%;
       line-height: 1.5em;
@@ -198,6 +202,16 @@ ul.social {
   text-align: center;
 }
 
+.vid-description {
+  text-align: center;
+  font-size: 2.5em;
+  a {
+    text-decoration: none;
+    border-bottom: 2px solid $logoblue;
+    color: $darkbrown;
+  }
+}
+
 .projects {
   @include span-columns(12);
   border-bottom: 2px solid $logoblue;
@@ -219,6 +233,7 @@ ul.social {
       width: 70%;
       font-size: 1.8em;
       font-weight: 500;
+      text-align: center;
     }
   }
 }
@@ -328,6 +343,7 @@ h2 {
   }
   .about .spiel p {
     margin-left: 15%;
+    
   }
   .about .img-container {
     width: 40%;
@@ -336,6 +352,9 @@ h2 {
   .projects .project-wrapper p {
     width: 100%;
     font-size: 2.5em;
+  }
+  video {
+    display: none;
   }
   .mail {
     top: 10px;
@@ -403,10 +422,10 @@ h2 {
     width: 100%;
     margin-top: -8%;
     p {
-      width: 100%;
-      margin: 0;
+      width: 90%;
+      margin: 0 5%;
       padding: 10px;
-      font-size: 1.9em;
+      font-size: 2.1em;
     }
   }
   .projects .project-wrapper {
@@ -559,8 +578,20 @@ h2 {
 }
 
 @media (max-width: 440px) {
-
   .skill-set .skills .fa {
     font-size: 6em;
+  }
+}
+
+@media (max-width: 353px) {
+  nav ul li {
+    padding: 0;
+    font-size: 1.4em;
+  }
+  .about .img-container img.tobz {
+    left: 20px;
+  }
+  svg#circle {
+    left: 13px;
   }
 }

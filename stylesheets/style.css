@@ -183,6 +183,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
+::selection {
+  background: #99cacf;
+}
+
 html {
   font-size: 62.5%;
   font-family: Verdana, Geneva, sans-serif;
@@ -223,6 +227,7 @@ span.greenline {
 }
 
 .language {
+  display: none;
   position: absolute;
   top: 30px;
   right: 150px;
@@ -335,7 +340,7 @@ svg#circle {
   margin-right: 0;
 }
 .about .spiel p {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-left: 5%;
   width: 95%;
   line-height: 1.5em;
@@ -403,6 +408,16 @@ ul.social li a:hover {
   text-align: center;
 }
 
+.vid-description {
+  text-align: center;
+  font-size: 2.5em;
+}
+.vid-description a {
+  text-decoration: none;
+  border-bottom: 2px solid #1a8c99;
+  color: #514d46;
+}
+
 .projects {
   float: left;
   display: block;
@@ -438,6 +453,7 @@ ul.social li a:hover {
   width: 70%;
   font-size: 1.8em;
   font-weight: 500;
+  text-align: center;
 }
 
 .video-wrapper {
@@ -567,6 +583,10 @@ h2 {
     font-size: 2.5em;
   }
 
+  video {
+    display: none;
+  }
+
   .mail {
     top: 10px;
   }
@@ -642,10 +662,10 @@ h2 {
     margin-top: -8%;
   }
   .about .spiel p {
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin: 0 5%;
     padding: 10px;
-    font-size: 1.9em;
+    font-size: 2.1em;
   }
 
   .projects .project-wrapper {
@@ -809,5 +829,19 @@ h2 {
 @media (max-width: 440px) {
   .skill-set .skills .fa {
     font-size: 6em;
+  }
+}
+@media (max-width: 353px) {
+  nav ul li {
+    padding: 0;
+    font-size: 1.4em;
+  }
+
+  .about .img-container img.tobz {
+    left: 20px;
+  }
+
+  svg#circle {
+    left: 13px;
   }
 }
