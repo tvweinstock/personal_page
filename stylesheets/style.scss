@@ -74,7 +74,7 @@ span.greenline {
 
 nav {
   position: relative;
-  margin-top: -25px;
+  margin-top: -15px;
   ul {
     position: relative;
     bottom: 5px;
@@ -245,6 +245,13 @@ ul.social {
     height: 325px;
   }
 }
+.mobile-project {
+  display: none;
+  width: 90%;
+  img {
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+  }
+}
 
 footer {
   @include span-columns(12);
@@ -353,8 +360,11 @@ h2 {
     width: 100%;
     font-size: 2.5em;
   }
-  video {
+  .vid-description, video {
     display: none;
+  }
+  .mobile-project {
+    display: inline;
   }
   .mail {
     top: 10px;
@@ -468,6 +478,7 @@ h2 {
   nav ul {
     bottom: 0;
     padding: 3% 0;
+    width: 70%;
     li {
       padding: 2%;
     }
@@ -497,10 +508,18 @@ h2 {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 613px) {
+  nav {
+    margin-top: -35px;
+    ul {
+      width: 75%;
+    }
+  }
+}
 
+@media (max-width: 576px) {
   nav ul {
-    width: 100%;
+    width: 80%;
     padding: 5% 0;
   }
 
@@ -531,21 +550,40 @@ h2 {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
+  nav ul {
+    width: 85%;
+  }
+}
+
+@media (max-width: 508px) {
+  nav ul {
+    width: 90%;
+  }
   footer .contacts {
     width: 90%;
+  }
+  .mobile-project img {
+    width: 80%;
   }
   .fa-send{
     font-size: 9em;
   }
 }
 
+@media (max-width: 480px) {
+  nav ul {
+    width: 85%;
+    li {
+      font-size: 1.6em;
+      padding: 2%;
+    }
+  }
+}
+
+
 @media (max-width: 440px) {
 
-  nav ul li {
-    font-size: 1.6em;
-    padding: 2%;
-  }
   .about h2 {
     font-size: 2.5em;
   }
@@ -583,6 +621,18 @@ h2 {
   }
 }
 
+@media (max-width: 428px) {
+  nav ul {
+    width: 90%;
+  }
+}
+@media (max-width: 405px) {
+  nav ul {
+    width: 95%;
+  }
+}
+
+
 @media (max-width: 353px) {
   nav ul li {
     padding: 0;
@@ -593,5 +643,14 @@ h2 {
   }
   svg#circle {
     left: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  nav ul {
+    width: 84%;
+  }
+  ul.social {
+    width: 85%;
   }
 }

@@ -7,7 +7,7 @@ $(document).ready(function (){
     el.currentTime = 0;
   });
 
-// Chris Croyier's fantastic smooth scroll
+// Chris Croyier's smooth scroll
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -31,10 +31,10 @@ $(function() {
     }
     var scrollPoint = $(window).scrollTop();
     if(scrollPoint > fixedNavSpot) {
-      $('.nav-wrapper').addClass('fixed').fadeIn('slow');
+      $('.nav-wrapper').addClass('fixed');
     }
     else {
-      $('.nav-wrapper').removeClass('fixed').fadeIn('fast');
+      $('.nav-wrapper').removeClass('fixed');
     }
   });
 
