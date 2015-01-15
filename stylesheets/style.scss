@@ -160,7 +160,7 @@ svg#circle {
 }
 
 ul.social {
-  width: 100%;
+  width: 85%;
   li {
     list-style: none;
     font-size: 5em;
@@ -649,8 +649,5 @@ h2 {
 @media (max-width: 320px) {
   nav ul {
     width: 84%;
-  }
-  ul.social {
-    width: 85%;
   }
 }
